@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="ServiceApp">
+<head>
+<meta charset="ISO-8859-1">
+<title>Angular Demo</title>
+<script src="lib/angular.js"></script>
+<script src="lib/angularService.js"></script>
+
+</head>
+<body>
+	<div ng-controller="testCtrl">
+		<table border="1">
+			<tr ng-repeat="x in serviceData">
+				<td><input type="button" ng-model="idName" value="{{x.ssoId}}" ng-click="ButtonClick()" /></td>
+				<td>{{x.id}}</td>
+				<td> {{x.ssoId}}</td>
+				<td>{{x.firstName}}</td>
+				<td>{{x.lastName}}</td>
+				<td>{{x.email}}</td>
+				<td>{{x.state}}</td>
+			</tr>
+		</table>
+	</div>
+</body>
+</html>

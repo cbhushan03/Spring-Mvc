@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<script src="lib/angular.js"></script>
+	<body>
+		<div ng-app="" ng-init="myCol='lightblue'">
+			<p>My first expression {{5+5}}</p>
+			
+		Color:	<input type="text" style="background-color:{{myCol}}" ng-model="myCol" value="{{myCol}}"><br>
+			
+		Quantity :	<input type="text" ng-model="quantity" /> <br>
+		
+		Rate :	<input type="text" ng-model="rate" /> <br>
+		
+		<p> Total in $Dollar. {{quantity*rate}}
+		</div>
+	</body>
+</html>
